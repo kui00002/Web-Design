@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Scoops of Happiness</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54535f3593.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,800;1,400;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sign class named "container" -->
+    <!-- In the body I declare 5 div elements, the classes all named "container", so I can style them easily in CSS -->
+    <div class="container">
+        <!-- In the first "container", I set header and banner -->
+        <!-- Sign class named "siteheader" -->
+        <header class="siteheader">
+            <!-- Sign class named "navigation" -->
+            <nav class="navgation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Sign class named "icon-1" which includes all social icons in the banner -->
+            <div class="icon-1">   
+                <!-- Import icon image from fontawesome website -->
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+            </div>    
+        </header>
+        <!-- Header end -->
+        <!-- Sign class named "banner" -->
+        <div class="banner">
+            <!-- Import banner images from local path -->
+            <!-- Put all banner images in html and use different one for different version(phone/mobile/desktop) -->
+            <img src="./Image/MobileBanner.jpg" alt="" id="mobilebanner">
+            <img src="./Image/DesktopBanner.jpg" alt="" id="desktopbanner">  
+        </div>
+    </div>
+
+    <!-- Sign class named "container" which is same as the div at the same level, so I can style them by one time -->
+    <!-- Second "container" class, use more div and class elements inside -->
+    <div class="container">
+        <!-- Sign class named "main-content" which has 2 classes (about and introduction) -->
+        <section class="main-content">
+            <!-- Sign class named "about" to show information about the shop, contains h2, p and a btn elements -->
+            <!-- Use multiple div elements for convenient typesetting in CSS -->
+            <div class="about">
+                <h2>About Two Scoops of Happiness</h2>
+                <p>Two Scoops of Happiness Ice Cream was founded by Caroline Wesbox Channing in Ottawa ten years ago. At the beginning, Caroline was a single mom who decided to focus on the ice cream shop full time. Five years later, she managed to move her business into a small ice cream store. Two Scoops of Happiness Ice Cream is now located on 1866 Hinton Ave, Ottawa. </p>
+                <!-- Sign class named "btn" for "Learn More" buttons, I will use this class name for all "Learn More" buttons -->
+                <div class="btn">
+                    <button class="jello-horizontal">Learn More</button>
+                </div>   
+            </div>
+            <!-- Sign class named "introduction" which contains 3 classes all named content for convenient typesetting in CSS -->
+            <!-- Each "content" class includes img, h3, p and btn elements -->
+            <section>
+            <h2>Our Best Seller Products</h2>
+            <div class="introduction">
+                <div class="content">
+                    <!-- Import image from local path -->
+                    <img src="./Image/VeryBerryLarge.jpg" alt="">
+                    <div class="smallcontainer">
+                        <h3>Very Berry Scoop</h3>
+                        <p>Berries + ice cream = the most yummy,<br>refreshing summer dessert.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Import image from local path -->
+                    <img src="./Image/TripleChocolateLage.jpg" alt="">
+                    <div class="smallcontainer">
+                        <h3>Triple Chocolate Cone</h3>
+                        <p>Chocolate ice cream cone.<br>Made with real cream, milk, and cocoa powder.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Import image from local path -->
+                    <img src="./Image/RealFruitBarLarge.jpg" alt="">
+                    <div class="smallcontainer">
+                        <h3>Real Fruit Orange Bar</h3>
+                        <p>Real fruit orange bar.<br>Made by organic Ontario orange and kumquat.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign class named "btn" for "Learn More" buttons, I will use this class name for all "Learn More" buttons -->
+            <div class="btn">
+                <button>Learn More</button>
+            </div>
+        </section>
+    </div>
+    <!-- Third "container" class, introduce social information about the shop -->
+    <!-- This "container" includes h2, img and btn elements -->
+    <div class="container">
+        <h2>Ice Cream Social</h2>
+        <div class="gallery">
+                <!-- Import banner images from local path, use div and class elements for convenient typesetting in CSS -->
+                <div class="image-1">
+                    <img src="./Image/StrawberryVanilla.jpg" alt="" id="g1">
+                </div>
+                <div class="image-2">
+                    <img src="./Image/IceCreamCup.jpg" alt="" id="g2">
+                </div>
+                <div class="image-3">
+                    <img src="./Image/IceCreamSocial.jpg" alt="" id="g3">
+                </div>             
+        </div>
+        <!-- Sign class named "btn" which is same as other "Learn More" Buttons -->
+        <div class="btn">
+            <button>Learn More</button>
+        </div>   
+    </div>
+    <!-- Fourth "container" class, introduce contact information about the shop -->
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <!-- Sign class named "contact" -->
+            <!-- The "contact" class has "contact-a", "contact-b" and "btn" classes which is named for grid typesetting in css -->
+            <div class="contact-a">
+                <h2>Location</h2>
+                <p>1866 Hinton Ave, Ottawa,<br>
+                    Ontario, CANADA<br>
+                    Email: twoscoops@gmail.com<br>
+                    Phone: 613-3433750</p>
+            </div>
+            <div class="contact-b">
+                <h2>Hours</h2>
+                <!-- Use table to list the contact information -->
+                <table class="table"> 
+                    <thead>
+                        <br>
+                    </thead>
+
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>11am - 9pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>9am - 7pm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Sign same class named "btn" -->
+        <div class="btn">
+            <button class="shake-bottom">Learn More</button>
+        </div>   
+    </div>
+
+    <!-- The last "container" class wich is the footer information -->    
+    <div class="container">
+        <footer>
+            <!-- Sign class named "nav-2" to list information links which will easy for typesetting in CSS  -->
+            <div class="nav-2">
+                <nav>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Terms and Conditons</a></li>    
+                    </ul>
+                </nav>
+            </div>
+            <!-- Sign class named "icon-2" to list social media icons -->
+            <div class="icon-2">
+                <!-- Import icon image from fontawesome website -->
+                <a href=""><i class="fab fa-instagram">&nbsp;INSTAGRAM</i></a>
+                <a href=""><i class="fab fa-twitter">&nbsp;TWITTER</i></a>
+                <a href=""><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a>
+            </div>
+            <!-- Sign class named "footercontact" to list contact information -->
+            <div class="footercontact">
+                <p>1866 Hinton Ave, Ottawa, ON, CANADA</p>
+                <p>+613-3433750</p>
+                <p>twoscoops@gmail.com</p>  
+            </div>
+            <!-- Sign class named "copyright" -->
+            <div class="copyright">
+                <p>&copy; 2021 Two Scoops of Happiness. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
