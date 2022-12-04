@@ -1,0 +1,610 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************************
+	Custom Sytle CSS Begining
+*********************************/
+
+/* Main General Style */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p { 
+    margin: 1rem 0;
+}
+
+.btn{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Heading Design */
+.logo {
+    margin: 10px;
+    height: auto;
+    display: inline-block;
+}
+
+.logobackground {
+    background-color: #c78c06;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.masthead {
+    display: block;
+    padding: 2rem;
+    background-color: #222;
+}
+
+/* Main Navigation Design */
+.nav-list {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #C78C06;
+    padding: 1em;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #C78C06;
+    color: #222;
+} 
+
+.nav-list .current {
+    background-color: #C78C06;
+    color: #222;
+}
+
+.nav-list .searchbox {
+    display: flex;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.nav-list .search {
+    font-size: 1.25rem;
+    color: rgba(2, 2, 2, 0.4);
+    margin: 1em 0;
+    padding: 10px;
+    width: 100%;
+} 
+
+.nav-list i {
+    border: 1px solid #C78C06;
+    color: #C78C06;
+    font-size: 2rem;
+    padding: 6px;
+}
+
+/* Footer Design */
+footer {
+    background-color: #222;
+    color: #C78C06;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/*********************************
+        Home Page CSS 
+ *********************************/
+.banner {
+    height: 650px;
+    background-image:url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    z-index: -999;
+    position: relative;
+}
+
+.homeinfo {
+    background-color: rgba(2, 2, 2, 0.6);
+    margin: 5rem 0;
+    height: 65%;
+    position: absolute;
+    top: 0%;   
+    padding:5%;
+    z-index: 1;
+}
+
+.banner h1 {
+    padding-top: 2rem;
+    text-align: left;
+    color: white;
+}
+
+.banner p {
+    color: white;
+}
+
+.banner .btn {
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    background-color: #C78C06;
+}
+
+.banner i {
+    font-size: 2rem;
+    color: inherit;
+    padding-left: 10px;
+}
+
+/*********************************
+        About Us Page CSS 
+**********************************/
+.intro img {
+    width: 100%;
+}
+
+.intro {
+    background-color: #ffe6ac;
+    padding: 1rem;  
+}
+
+/*********************************
+        Our Service Page CSS 
+**********************************/
+.cards {
+    padding: 1em;
+}
+
+.card {
+    margin-bottom: 1em;
+    background-color: #ffe6ac;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .info {
+    padding: 1em;
+}
+
+.card .btn {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.card .btn:hover {
+    background-color: #C78C06;
+}
+
+.card i {
+    font-size: 2rem;
+    color: white;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 1em;
+}
+
+.vision .btn {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    border:#c78c06 1px solid;
+}
+
+.vision .btn:hover {
+    background-color: #C78C06;
+
+}
+
+.vision i {
+    font-size: 2rem;
+    color: white;
+    padding-left: 10px;
+}
+
+/*********************************
+        Team Page CSS 
+**********************************/
+.team {
+    padding: 1em;
+}
+
+.allcard{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.ceoimg{
+    width: 100%;
+    margin-bottom: 0; 
+}
+
+.cardone{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cardtwo{
+    width: 100%;
+}
+
+.cfoimg{
+    width: 100%;
+    margin-bottom: 0; 
+}
+
+.ceoinfo {
+    background-color: #ffe6ac;
+    padding: 5%;
+    margin-top: -0.5rem; 
+}
+
+.cfoinfo{
+    background-color: #ffe6ac;
+    padding: 5%;
+    margin-top: -0.5rem; 
+}
+
+.line{
+    border-top: 1px #c78c06 solid; 
+}
+
+/*********************************
+        Contact Page CSS 
+**********************************/
+.contact {
+    padding: 1em;
+}
+
+.contact table {
+    width: 100%;
+}
+
+.contact td,th {
+    border: 1px solid #222;
+    padding:10px;
+}
+
+.contact thead {
+    background-color: #ffe6ac;
+}
+
+.contact iframe {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.message,
+.fullname,
+.email {
+	font-size: 1.5rem;
+	width: 99%;
+	display: block;
+	border: 1px solid #222;
+	border-radius: 0px;
+    margin-bottom: 1rem;
+}
+
+.contact-form .submit {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #c78c06;
+    display: inline-block;
+    background-color: #222;
+    border-radius: 0px;
+    border: 0px;
+} 
+
+/*********************************
+        Desktop View 
+**********************************/
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+
+    body{
+        max-width: 1200px;
+    }
+
+    .masthead {
+        display: flex;
+        text-align: center;
+    }
+
+    .logobackground {
+        background-color: #222;
+    }
+
+    .main-nav {
+        width: 90%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .logo {
+        padding-right: 5rem;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }  
+
+    .homeinfo {
+        margin: 3rem 5rem;
+        height: 70%;
+        padding: 1% 5% 3% 1%;
+    }
+
+    .banner h1 {
+        padding-top: 0;
+        font-size: 5rem;
+    }
+
+    .intro {
+        margin: 0 auto;
+        padding: 1rem 4rem 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro img {
+        display: block; 
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 5%;
+        height: 85%;   
+    }
+    
+    /*********************************
+            Service Page CSS 
+    **********************************/
+    .cards {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "header header header header header header"
+        "card1 card1 card1 card2 card2 card2"
+        "card3 card3 card4 card4 card5 card5"
+        ;
+        gap: 1em;
+        justify-content: center;
+    }
+    
+    .service h2 {
+        grid-area: header;
+    }
+
+    .service .card1 {
+        grid-area: card1;
+    }
+
+    .service .card2 {
+        grid-area: card2;
+    }
+
+    .service .card3 {
+        grid-area: card3;
+    }
+
+    .service .card4 {
+        grid-area: card4;
+    }
+
+    .service .card5 {
+        grid-area: card5;
+    }
+
+    /*********************************
+            Our Team Page CSS 
+    **********************************/
+    .team {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    .allcard{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .cardone{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        width:100%;  
+        margin-bottom: 0; 
+    }
+
+    .ceoimg{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-bottom: 0; 
+        width: 100%;  
+    }
+
+    .ceoinfo{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: #ffe6ac;
+        padding: 5%;
+        margin-top: 0;
+    }
+    
+    .cardtwo{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr; 
+        width:100%;    
+    }
+
+    .cfoimg {
+        width: 100%;
+    }
+
+    .cfoinfo{
+        background-color: #ffe6ac;
+        grid-row: 1/2;
+        padding: 5%;
+        margin-top: 0;
+    }
+
+    /*********************************
+            Contact Page CSS 
+    **********************************/
+
+    .contact {
+        padding: 1rem 5rem 1rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "header header"
+        "message map"
+        "hours hours"
+        ;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .contact h2 {
+        grid-area: header;
+    }
+
+    .contact .sendmessage {
+        grid-area: message;
+    }
+
+    .contact .map {
+        grid-area: map;
+    }
+
+    .contact .hours {
+        grid-area: hours;
+    }
+
+    footer {
+        padding-left: 5rem;
+    }
+}   
+
